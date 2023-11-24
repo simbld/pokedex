@@ -1,9 +1,10 @@
-import MyTitle from './components/PokemonCard';
+import PokemonCard from './components/PokemonCard';
+import '/src/App.css';
 
 function App() {
 	return (
-		<div>
-			<MyTitle />
+		<div className="App">
+			<PokemonCard />
 		</div>
 	);
 }
