@@ -1,15 +1,6 @@
-const pokemonList = [
-	{
-		name: 'bulbasaur',
-		imgSrc: 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png',
-	},
-	{
-		name: 'mew',
-	},
-];
-
-function PokemonCard() {
-	const pokemon = pokemonList[0];
+/* eslint-disable react/prop-types */
+function PokemonCard(props) {
+	const { pokemon } = props;
 	const pictureDisplay = pokemon.imgSrc ? (
 		<img
 			className="card-img"
