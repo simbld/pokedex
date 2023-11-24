@@ -11,12 +11,16 @@ const pokemonList = [
 function PokemonCard() {
 	const pokemon = pokemonList[0];
 	const pictureDisplay = pokemon.imgSrc ? (
-		<img src={pokemon.imgSrc} alt={`Pokemon ${pokemon.name}`} />
+		<img
+			className="card-img"
+			src={pokemon.imgSrc}
+			alt={`Pokemon ${pokemon.name}`}
+		/>
 	) : (
 		<p>???</p>
 	);
 	return (
-		<figure>
+		<figure className="card">
 			{pictureDisplay}
 			<figcaption>{pokemon.name}</figcaption>
 		</figure>
