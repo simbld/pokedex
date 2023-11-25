@@ -1,57 +1,102 @@
-#root {
- 	 max-width: 1280px;
- 	 margin: 0 auto;
- 	 padding: 2rem;
- 	 text-align: center;
-}
-
+body {
+	margin: 0;
+	padding-top: 15%;
+  display: grid;
+  place-items: center;
+	background-color: #242424;
+  }  
+  
 .App {
- 	 display: flex;
- 	 flex-direction: column;
- 	 align-items: center;
-  	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.logo:hover {
- 	 filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  	filter: drop-shadow(0 0 2em #61dafbaa);
+.container {
+  display: grid;
+  place-items: center;
+  height: 100%;
 }
 
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+  
 .card {
- 	width: 200px;
- 	padding: 1rem;
-  	background-color: rgb(144, 192, 238);
-  	background: #07A494;
+	width: 300px;
+	height: 280px;
+	padding: 1rem;
 	background: linear-gradient(to right, #07A494 0%, #306486 50%, #0b2b41 100%);
- 	border-radius: 5px;
- 	box-shadow: 0px 0px 6px rgb(134, 133, 133);
- 	color: rgb(184, 151, 102);
-  	font-size: 1.6rem;
-  	text-align: center;
-  	text-shadow: 1px 1px 8px rgb(15, 15, 15);
+	border-radius: 5px;
+	box-shadow: 0px 0px 6px rgb(134, 133, 133);
+	color: rgb(184, 151, 102);
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 1px 1px 8px rgb(15, 15, 15);
 }
-
+  
 .card-img {
 	width: 100%;
-  	height: auto;
-  	margin-bottom: 0.5rem;
-  	background-color: rgba(216, 92, 10, 0.541);
-  	border-radius: inherit;
-  	box-shadow: inherit;
+	height: 100%;
+	margin-bottom: 0.5rem;
+	border-radius: inherit;
+	box-shadow: inherit;
+	background-color: #324e61;
 }
+  
 .card:hover {
-	width: 200px;
-	padding: 1rem;
-	background-color: rgb(185, 212, 238);
-	background: #73e6da;
-	background: linear-gradient(to right, #5bc4b9 0%, #2c6f9c 50%, #144f77 100%);
-	border-radius: 5px;
-	box-shadow: 0px 0px 6px rgb(179, 176, 176);
+	background: linear-gradient(to right, #73e6da 0%, #2c6f9c 50%, #144f77 100%);
 	color: rgb(204, 176, 135);
-	font-size: 1.6rem;
-	text-align: center;
+	box-shadow: 0px 0px 6px rgb(179, 176, 176);
 	text-shadow: 1px 1px 8px rgb(58, 57, 57);
 }
 
+.button-container {
+		padding-top: 5%;
+    display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+}
+  
+.button {
+    width: 90px;
+    background-image: radial-gradient(circle, rgb(24, 73, 75), #07A494);
+    border: 10px rgb(19, 18, 18);
+    color: rgb(193, 196, 164);
+    padding: 10px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+    letter-spacing: 0.1px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.button:hover {
+	transform: scale(1.05);
+	box-shadow: 0 10px rgb(19, 18, 18);
+	text-shadow: 1px 1px 8px rgb(58, 57, 57);
+}
+
+.button:active {
+	transform: scale(1.05);
+	box-shadow: 0 2px rgb(19, 18, 18);
+	transform: translateY(8px);
+	transition: box-shadow 0.1s ease;
+}
+
+    
