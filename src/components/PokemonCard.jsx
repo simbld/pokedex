@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
-function PokemonCard(props) {
-	const { pokemon } = props;
+function PokemonCard({ pokemon }) {
 	const pictureDisplay = pokemon.imgSrc ? (
 		<img
 			className="card-img"
