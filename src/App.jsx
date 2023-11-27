@@ -39,9 +39,8 @@ function App() {
 					<div className="card-container">
 						<PokemonCard pokemon={pokemonList[pokemonIndex]} />
 						<NavBar
-							pokemonIndex={pokemonIndex}
+							pokemonList={pokemonList}
 							setPokemonIndex={setPokemonIndex}
-							pokemonListLength={pokemonList.length}
 						/>
 					</div>
 				</div>
